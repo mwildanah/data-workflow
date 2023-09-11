@@ -75,6 +75,6 @@ for j in range(len(data_hamzah['produk_url'])):
     # print(df_temp)
     df = pd.concat([df,df_temp])
 df.to_csv('result_crawl_{}_by_product.csv'.format(d.strftime('%Y_%m_%d_%H_%M_%S')),index=False)
-print("--- %s minutes processing time ---" % (time.time() - start_time)/60)
+print("--- %s minutes processing time ---" % (int(time.time() - start_time)/60))
 print("data for {} is done".format(d.strftime('%Y_%m_%d')))
 driver.close()

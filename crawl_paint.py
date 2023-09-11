@@ -9,7 +9,7 @@ import csv
 from datetime import datetime
 import pandas as pd
 
-PATH = "chromedriver.exe"
+PATH = "chromedriver"
 driver = webdriver.Chrome(PATH)
 
 material_bangunan = ['cat-kayu','cat-pelapis','cat-semprot','cat-tembok','kuas-cat','plamir','roller-cat','thinner','wallpaper']
